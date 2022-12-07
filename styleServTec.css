@@ -1,0 +1,251 @@
+/* Navbar */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --left-bg-color: rgba(125, 122, 248, 0.7);
+    --right-bg-color: rgba(90, 90, 90, 0.8);
+    --left-btn-hover-color: #f6ae10;
+    --right-btn-hover-color: #0d6efd;
+    --hover-width: 75%;
+    --other-width: 25%;
+    --speed: 2000ms;
+  }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.socialIcons{
+  background-color: #f6ae10;
+  padding: 0.1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  padding: 0.3rem 5rem 0.3rem 0rem;
+
+}
+
+.socialIcons a{
+  margin-right: 4rem;
+  color: #000;
+  text-decoration: none;
+}
+
+header {
+  font-family: 'Open Sans', sans-serif;
+  color: #222;
+  padding-bottom: 2%;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    color: whitesmoke;
+  }
+  
+  .nav {
+    background-color: rgb(35, 35, 35);
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+    border-bottom: solid white;
+  }
+  
+  .nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1%;
+  }
+  
+  .nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 15px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .nav.active {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav.active a {
+    color: #000;
+  }
+  
+  .nav.active .container {
+    padding: 10px 0;
+  }
+
+.nav a.current,
+.nav a:hover {
+  color: #f6ae10;
+  font-weight: bold;
+}
+
+/*ACÁ COMIENZA EL MAIN*/
+.fondo{
+    background-color: rgb(142, 142, 142);
+    }
+
+/*Contacto servicio tecnico*/
+
+.tituloPaginas{
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+    color: var(--bs-body-bg);
+    margin-top: -2rem;
+  }
+  
+  .tituloPaginas h3{
+    color: #ffffff;
+  }
+  
+  .servicioTecnico{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1rem;
+  }
+  .servicioTecnico ul{
+    font-size: medium;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #000;
+    font-weight: 400;
+  }
+  
+  .servicioTecnico img{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 0 1rem 5rem
+  }
+  
+  .card-body{
+    font-weight: 700;
+    font-size: larger;
+    padding-top: 0.5rem;
+    color: #000;
+    text-align: left;
+  }
+  
+  /* Estilos formulario */
+  
+  #formulario{
+    background-color: #ffc107;
+    padding: 1rem;
+    border: solid 2px;
+    border-radius: 1%;
+    color: #000;
+  }
+  
+  .form-label{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+  }
+  
+  #buttonSend{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  
+  .container-form{
+    margin-bottom: 5rem;
+  }
+
+  /* FOOTER */
+
+footer{
+    position: relative;
+    width: 100%;
+    background-color: #232323;
+    min-height: 100px;
+    margin-bottom: -2rem;
+    padding: 20px 50px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-top: solid 0.4rem white;
+  }
+  
+  .tecno{
+    font-size: 60px;
+    color: aliceblue;
+    font-weight: 700;
+  }
+  
+  footer .social_icons{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px, 0;
+  flex-wrap: wrap;
+  }
+  
+  .social_icons ion-icon{
+    color: #f6ae10;
+  }
+  
+  .social_icons li{
+    list-style: none;
+    margin: 0 4rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  footer .social_icons li a{
+    font-size: 4em;
+    display: inline-block;
+    transition: 0.5s;
+  }
+  
+  footer .social_icons li a:hover{
+    transform: translateY(-15px);
+  }
+  
+  
+  footer p{
+    color: #a9a9a9 ;
+    margin-top: 30px;
+    font-size: 1.1em;
+  }
+
+  .lastDirections{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+  }
+  
+  .lastDirections li a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff;
+    margin: 0 4rem 0 2rem;
+    align-items: center;
+  
+  }
+
+  svg{
+    background-color: var(--bs-gray-300);
+    margin-top: -3rem;
+  }

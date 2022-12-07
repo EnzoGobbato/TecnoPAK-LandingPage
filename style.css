@@ -442,11 +442,26 @@ footer .social_icons li a:hover{
   transform: translateY(-15px);
 }
 
-
 footer p{
   color: #a9a9a9 ;
   margin-top: 30px;
   font-size: 1.1em;
+}
+
+.lastDirections{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.lastDirections li a{
+  text-decoration: none;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 5rem 0 1rem;
+  align-items: center;
+
 }
 
 svg{
